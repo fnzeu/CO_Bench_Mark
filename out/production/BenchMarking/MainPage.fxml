@@ -18,12 +18,7 @@
             <Font size="25.0" />
          </font>
       </TextField>
-      <TextField fx:id="FirstCramerTxt" alignment="CENTER" editable="false" layoutX="555.0" layoutY="188.0" onAction="#FirstCramerTxtAction" prefHeight="73.0" prefWidth="213.0" styleClass="bodybg1" stylesheets="@Style.css" AnchorPane.rightAnchor="134.0">
-         <font>
-            <Font size="25.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="SecondCramerTxt" alignment="CENTER" editable="false" layoutX="555.0" layoutY="354.0" onAction="#SecondCramerTxtAction" prefHeight="73.0" prefWidth="213.0" styleClass="bodybg1" stylesheets="@Style.css">
+      <TextField fx:id="SecondCramerTxt" alignment="CENTER" editable="false" layoutX="555.0" layoutY="261.0" onAction="#SecondCramerTxtAction" prefHeight="73.0" prefWidth="213.0" styleClass="bodybg1" stylesheets="@Style.css">
          <font>
             <Font size="25.0" />
          </font>
@@ -39,16 +34,12 @@
             <Font name="Yu Gothic Bold" size="29.0" />
          </font>
       </Label>
-      <Label fx:id="CramerTxt" layoutX="610.0" layoutY="136.0" text="Cramer" textAlignment="CENTER" textFill="#fffdfd">
+      <Button fx:id="MoreDetails" layoutX="409.0" layoutY="461.0" mnemonicParsing="false" onAction="#MoreDetailsAction" style="-fx-background-color: #0598ff;" styleClass="bodybg1" stylesheets="@Style.css" text="More Details" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="ThreadsTxt" layoutX="609.0" layoutY="208.0" prefHeight="34.0" prefWidth="105.0" text="Threads" textFill="WHITE">
          <font>
-            <Font name="Yu Gothic Bold" size="29.0" />
+            <Font name="Yu Gothic Bold" size="23.0" />
          </font>
       </Label>
-      <Button fx:id="ShowButton" layoutX="555.0" layoutY="54.0" mnemonicParsing="false" onAction="#ShowButtonAction" prefHeight="25.0" prefWidth="213.0" styleClass="bodybg1" stylesheets="@Style.css" text="Show Cramer  Execution Time">
-         <font>
-            <Font name="Yu Gothic Regular" size="12.0" />
-         </font>
-      </Button>
-      <Button fx:id="MoreDetails" layoutX="409.0" layoutY="461.0" mnemonicParsing="false" onAction="#MoreDetailsAction" style="-fx-background-color: #0598ff;" styleClass="bodybg1" stylesheets="@Style.css" text="More Details" textAlignment="CENTER" textFill="WHITE" />
+      <TextField fx:id="NoCorestxt" layoutX="555.0" layoutY="54.0" onAction="#NoCoresAction" prefHeight="25.0" prefWidth="213.0" promptText="Enter no cores * 2 " styleClass="bodybg1" stylesheets="@Style.css" />
    </children>
 </AnchorPane>

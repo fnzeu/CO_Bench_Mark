@@ -1,7 +1,6 @@
 package Controllers;
 
-import Services.Cramer1Service;
-import Services.Pi1Service;
+import Services.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -20,6 +19,8 @@ public class MainPageController {
 
     private static long T1;
     private static long T2;
+    private static long T3;
+    private static long T4;
 
     @FXML
     private TextField FirstPiTxt;
@@ -50,6 +51,14 @@ public class MainPageController {
 
     @FXML
     private Button MoreDetails;
+
+    @FXML
+    private TextField NoCorestxt;
+
+    @FXML
+    void NoCoresAction(ActionEvent event) {
+
+    }
 
 
     @FXML
@@ -108,15 +117,19 @@ public class MainPageController {
         T2=obj.getTimeout();
         String Time=Long.toString((T2));
         FirstPiTxt.setText(Time);
+
+
+        Pi2Service obj2=new Pi2Service();
+        int decimal=Integer.parseInt(DigitsTxt.getText());
+        obj2.getDecimal(decimal);
+        T4=obj2.getTimeout();
+        String T=Long.toString(T4);
+        SecondPiTxt.setText(T);
+        //System.out.println("> " + time + " ms");
     }
 
     public void ShowButtonAction(javafx.event.ActionEvent actionEvent) {
-
-        Cramer1Service object = new Cramer1Service();
-        object.solutionOfCramerSystem();
-        T1=object.getTimeout();
-        String Time= Long.toString(T1);
-        FirstCramerTxt.setText(Time);
+        
     }
 
     public void MoreDetailsAction(javafx.event.ActionEvent actionEvent) throws IOException {
@@ -130,6 +143,21 @@ public class MainPageController {
         window.show();
     }
 
-        public static long getTime1(){ return T1;}
         public static long getTime2(){ return T2;}
+        public static long getTime3(){ return T3;}
+        public static long getTime4(){ return T4;}
+
+    public void NoCoresAction(javafx.event.ActionEvent actionEvent) {
+        try {
+            Threads1Service obj3= new Threads1Service();
+            String x=NoCorestxt.getText();
+            int y=Integer.parseInt(x);
+            obj3.Threads(y);
+            T3=obj3.getTimeout();
+            String TIME=Long.toString(T3);
+            SecondCramerTxt.setText(TIME);
+        } catch(InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
+    }
 }

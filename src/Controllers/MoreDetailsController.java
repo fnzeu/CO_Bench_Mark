@@ -24,6 +24,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Observable;
 import java.util.ResourceBundle;
+import java.util.Set;
 
 public class MoreDetailsController {
 
@@ -77,7 +78,8 @@ public class MoreDetailsController {
         XYChart.Series set1= new XYChart.Series();
 
         set1.getData().add(new XYChart.Data("Pi1", MainPageController.getTime2()));
-        set1.getData().add(new XYChart.Data("C1", MainPageController.getTime1()));
+        set1.getData().add(new XYChart.Data("Threads",MainPageController.getTime3()));
+        set1.getData().add(new XYChart.Data("Pi2",MainPageController.getTime4()));
 
 
         BarChart.getData().addAll(set1);
