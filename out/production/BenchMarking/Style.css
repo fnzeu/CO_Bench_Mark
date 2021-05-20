@@ -1,0 +1,9 @@
+.bodybg{
+    -fx-background-image: url('Photo1.jpg');
+    -fx-background-size: cover;
+}
+
+.bodybg1{
+    -fx-background-color: #FFFFF;
+    -fx-background-radius: 100;
+}
