@@ -1,6 +1,6 @@
 package Services;
 
-public class Pi1Service {
+public class Pi1Service { //spigot
 
     private int[] digits;
     long timeout;

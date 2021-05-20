@@ -20,7 +20,7 @@
       </Button>
       <HBox fx:id="Hbox" alignment="BOTTOM_RIGHT" layoutX="351.0" layoutY="422.0" prefHeight="62.0" prefWidth="902.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Text fx:id="BabaYagaTxt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="\@Baba Yaga Fargolina mea" textAlignment="CENTER">
+            <Text fx:id="BabaYagaTxt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="\@Baba Yaga Fragolina mea" textAlignment="CENTER">
                <font>
                   <Font name="Yu Gothic Bold" size="20.0" />
                </font>
